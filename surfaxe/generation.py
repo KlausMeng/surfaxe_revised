@@ -154,7 +154,7 @@ parallelise=True, processes=None, **kwargs):
     save_slabs_kwargs = {'user_incar_settings': None, 
     'user_kpoints_settings': None, 'user_potcar_settings': None, 
     'constrain_total_magmom': False, 'sort_structure': True, 
-    'potcar_functional': None, 'user_potcar_functional': None, 
+    'user_potcar_functional': None, 
     'force_gamma': False, 'reduce_structure': None, 'vdw': None, 
     'use_structure_charge': False, 'standardize': False, 'sym_prec': 0.1, 
     'international_monoclinic': True}
