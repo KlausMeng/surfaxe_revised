@@ -510,7 +510,7 @@ plt_fname='energy_per_atom.png'):
     # energy values. Converts the energy and time values to np arrays for
     # plotting
     for group in df.groupby('slab_index'):
-        df2 = group[1].pivot('slab_thickness', 'vac_thickness', 'slab_per_atom')
+        df2 = group[1].pivot(index = 'slab_thickness', columns = 'vac_thickness', values = 'slab_per_atom')
         indices.append(group[0])
         vals.append(df2.to_numpy())
         dfs.append(df2)
